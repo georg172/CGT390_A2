@@ -72,11 +72,11 @@ namespace Miner49er
         /// </summary>
         private Boolean parched(FSA fsa)
         {
-            if (thirst >= 15)
+            if (thirst >= 12)
             {
                 Console.WriteLine("Too thirsty too work.");
             }
-            return thirst >= 15;
+            return thirst >= 12;
         }
 
         /// <summary>
@@ -120,11 +120,11 @@ namespace Miner49er
             thirst++;
         }
 
-        private Boolean pocketsFull(FSA fsa) => gold >= 5;
+        private Boolean pocketsFull(FSA fsa) => gold >= 10;
 
         private Boolean pocketsNotEmpty(FSA fsa) => gold > 0;
 
-        private Boolean thirsty(FSA fsa) => thirst > 0;
+        private Boolean thirsty(FSA fsa) => thirst > 6;
 
         public void printStatus()
         {
